@@ -1,0 +1,115 @@
+.navbar {
+    outline: 1px solid whitesmoke !important;
+}
+
+table,
+thead,
+tr,
+th {
+    border-bottom-color: #dee2e6 !important;
+    background-color: white!important;
+    /* border-style: none!important; */
+    border-width: 1px 0px;
+}
+.modal-body>table,.modal-body>.thead,.modal-body>tr,.modal-body>th{
+  border: none!important;
+  border-bottom-color: none !important;
+  border-width: none!important;
+}
+.progress {
+  width: 60px;
+  height: 60px;
+  background: none;
+  position: relative;
+}
+
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 6px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+  transform: rotate(80deg);
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  transform: rotate(180deg);
+}
+
+.progress .progress-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn{
+    padding: 0px 10px !important;
+    border-color: #9FC131!important;
+}
+.btn:focus{
+    box-shadow: none!important;
+}
+.modal-title{
+  color: #9FC131;
+}
+
+.customer{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    /* color: #027A48; */
+    /* padding: 2px 8px; */
+    justify-content: center;
+    align-items: center;
+    Width: 66px;
+    Height: 22px;
+    Padding: 2px, 8px, 2px, 8px;
+}
