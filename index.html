@@ -15,6 +15,9 @@
          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,400;0,500;1,500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <title>DashBoard</title>
@@ -25,7 +28,7 @@
         <div class="container-fluid p-0 bg-light vh-100">
             <nav class="navbar justify-content-between bg-white p-0 pr-5" style="height: 4rem;">
                 <form class="search">
-                    <h4 style="color: #9FC131;"><b>CHURCHUB</b></h4>
+                    <h4 style="color: #9FC131;" class="ms-3"><b>CHURCHUB</b></h4>
                 </form>
                 <div class="actions d-flex">
                     <div>
@@ -41,7 +44,7 @@
 
             <!-- BEGINING OF CONTAINER -->
             <div class="container-fluid">
-                <div class="row mt-4 ml-0 mr-0 mb-5 p-0 justify-content-between gy-2 gx-1">
+                <div class="row mt-4 ml-0 mr-0 mb-5 p-0 justify-content-evenly gy-2 gx-1">
                     <!-- FIRTST ROW -->
                     <div class="col-md-2">
                         <div class="card px-3 py-2 border-light flex-row align-items-center">
@@ -130,22 +133,24 @@
                 <!-- BEGINNING OF TABLE -->
 
                 <div class="overflow-auto">
-                    <p class="tableTitle m-0" id=""> <small>LATEST GLEE EVENT</small> </p>
+                    <p class="tableTitle m-0" id=""> <small>LATEST CHURCHUB EVENT</small> </p>
                     <table class="table m-0 border-light">
                         <thead>
                             <tr>
-                                <th scope="col">CLIENT</th>
-                                <th scope="col">EVENT</th>
-                                <th scope="col">CREATOR</th>
-                                <th scope="col">AMOUNT</th>
-                                <th scope="col">DELIVERY</th>
-                                <th scope="col">STATUS</th>
-                                <th scope="col"></th>
+                                <th scope="col">NAME</th>
+                                <th scope="col">EMAIL</th>
+                                <th scope="col">ADDRESS</th>
+                                <th scope="col">PhoneNumber</th>
+                                <th scope="col">CITY</th>
+                                <th scope="col">LANDMARK</th>
+                                <th scope="col">LGA</th>
+                                <th scope="col">MEMBERSHIP</th>
                                 <th scope="col"></th>
                             </tr>
                         </thead>
 
                         <tbody>
+                            <!-- FIRST TABLE ROW -->
                             <tr>
                                 <td>
                                     <div>
@@ -155,41 +160,44 @@
 
                                 <td>
                                     <div>
-                                        <p><small>Birthday</small></p>
+                                        <p><small>kceemaani@gmail.com</small></p>
                                     </div>
                                 </td>
                                 <td>
                                     <div>
-                                        <p><small>Chuks Virgo</small></p>
+                                        <p><small>No. 18 Abak road</small></p>
+                                    </div>
+                                </td>
+                                
+                                <td>
+                                    <div>
+                                        <p><small>+2348104407318</small></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p><small>Uyo</small></p>
                                     </div>
                                 </td>
 
                                 <td>
                                     <div>
-                                        <p><small>N60,000</small></p>
-                                    </div>
-                                </td>
-
-                                <td>
-                                    <div>
-                                        <p><small>9 July 2006</small></p>
+                                        <p><small>Durap Lounge</small></p>
                                     </div>
                                 </td>
 
 
                                 <td>
-                                    <span class="iconify text-success"
-                                        data-icon="emojione-monotone:small-orange-diamond"
-                                        style="color: #027a48;"></span>
-                                    <p class="customer d-inline text-success">Completed</p>
+                                    <p class="customer d-inline text-success">Ikot-Ekpene</p>
                                 </td>
 
                                 <td>
-                                    <p><small>20 mins ago</small></p>
+                                    <p><small>Creator</small></p>
                                 </td>
 
                                 <td>
                                     <!-- Button trigger modal -->
+
                                     <button type="button" class="btn" data-bs-toggle="modal"
                                         data-bs-target="#staticBackdrop">
                                         View
@@ -199,52 +207,76 @@
                                     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
                                         data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
                                         aria-hidden="true">
-                                        <div class="modal-dialog">
+                                        <div class="modal-dialog modal-dialog-centered modal-lg">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="staticBackdropLabel">LATEST GLEE EVENT
+                                                    <h5 class="modal-title" id="staticBackdropLabel">LATEST CHURCHUB
+                                                        EVENT
                                                     </h5>
                                                     <button type="button" class="btn-close btn" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                 </div>
 
-                                                <div class="modal-body">
+                                                <div class="modal-body d-flex">
                                                     <table>
                                                         <thead>
                                                         </thead>
                                                         <tbody class="table">
                                                             <tr>
-                                                                <td><b>CLIENT:</b></td>
+                                                                <td><b>NAME</b></td>
                                                                 <td>David Samuel</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><b>EVENT:</b></td>
-                                                                <td>Birthday</td>
+                                                                <td><b>EMAIL</b></td>
+                                                                <td>kceemaani@gmail.com</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><b>CREATOR:</b></td>
-                                                                <td>Chuks Virgo</td>
+                                                                <td><b>ADDRESS</b></td>
+                                                                <td>No. 18 Abak road</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><b>AMOUNT:</b></td>
-                                                                <td>N60,000</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><b>DELIVERY:</b></td>
-                                                                <td>9 July, 2006</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><b>STATUS:</b></td>
+                                                                <td><b>PhoneNumber</b></td>
                                                                 <td>
-                                                                    <span class="iconify text-success"
-                                                                        data-icon="emojione-monotone:small-orange-diamond"
-                                                                        style="color: #027a48;"></span>
-                                                                    <p class="customer d-inline text-success">Completed
-                                                                    </p>
+                                                                    +2348104407318
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td><b>CITY</b></td>
+                                                               <td>
+                                                                Uyo
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><b>LANDMARK</b></td>
+                                                                <td>
+                                                                    Durap Lounge
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><b>LGA</b></td>
+                                                                <td>
+                                                                    <p class="customer d-inline text-danger">Ikot-Ekpene</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><b>MEMBERSHIP</b></td>
+                                                                <td>
+                                                                    Creator
                                                                 </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
+                                                    <div class="row gx-2 p-0 w-50 justify-content-center ms-5">
+                                                        <div class="col-6">
+                                                         <img src="./images/virGold HUB.jpeg" alt=""  width="100%" height="100%">
+                                                        </div>
+                                                        <div class="col-6">
+                                                         <img src="./images/virGold HUB.jpeg" alt=""  width="100%" height="100%">
+                                                        </div>
+                                                        <div class="col-6 mt-2 ">
+                                                         <img src="./images/virGold HUB.jpeg" alt=""  width="100%" height="100%">
+                                                        </div>
+                                                     </div>
                                                 </div>
 
                                                 <div class="modal-footer borderless">
@@ -255,7 +287,7 @@
                                         </div>
                                     </div>
                                 </td>
-
+                                <!-- SECOND TABLE ROW -->
                             </tr>
                             <tr>
                                 <td>
@@ -266,37 +298,39 @@
 
                                 <td>
                                     <div>
-                                        <p><small>Birthday</small></p>
+                                        <p><small>kceemaani@gmail.com</small></p>
                                     </div>
                                 </td>
 
                                 <td>
                                     <div>
-                                        <p><small>Chuks Virgo</small></p>
+                                        <p><small>No. 18 Abak road</small></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p><small>+2348104407318</small></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p><small>Uyo</small></p>
                                     </div>
                                 </td>
 
                                 <td>
                                     <div>
-                                        <p><small>N60,000</small></p>
-                                    </div>
-                                </td>
-
-                                <td>
-                                    <div>
-                                        <p><small>12 Dec 2020</small></p>
+                                        <p><small>Durap Lounge</small></p>
                                     </div>
                                 </td>
 
 
                                 <td>
-                                    <span class="iconify text-danger"
-                                        data-icon="emojione-monotone:small-orange-diamond"></span>
-                                    <p class="customer d-inline text-danger">Processing</p>
+                                    <p class="customer d-inline text-danger">Oron</p>
                                 </td>
 
                                 <td>
-                                    <p><small>20 mins ago</small></p>
+                                    <p><small>Organizer</small></p>
                                 </td>
 
                                 <td>
@@ -310,56 +344,76 @@
                                     <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static"
                                         data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
                                         aria-hidden="true">
-                                        <div class="modal-dialog">
+                                        <div class="modal-dialog modal-dialog-centered modal-lg">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="staticBackdropLabel">LATEST GLEE EVENT
+                                                    <h5 class="modal-title" id="staticBackdropLabel">LATEST CHURCHUB
+                                                        EVENT
                                                     </h5>
                                                     <button type="button" class="btn-close btn" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                 </div>
 
-                                                <div class="modal-body">
+                                                <div class="modal-body d-flex">
                                                     <table>
                                                         <thead>
                                                         </thead>
                                                         <tbody class="table">
                                                             <tr>
-                                                                <td><b>CLIENT:</b></td>
+                                                                <td><b>NAME</b></td>
                                                                 <td>David Samuel</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><b>EVENT:</b></td>
-                                                                <td>Birthday</td>
+                                                                <td><b>EMAIL</b></td>
+                                                                <td>kceemaani@gmail.com</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><b>CREATOR:</b></td>
-                                                                <td>Chuks Virgo</td>
+                                                                <td><b>ADDRESS</b></td>
+                                                                <td>No. 18 Abak road</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><b>AMOUNT:</b></td>
-                                                                <td>N60,000</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><b>DELIVERY:</b></td>
+                                                                <td><b>PhoneNumber</b></td>
                                                                 <td>
-                                                                    <div>
-                                                                        <p><small>12 Dec 2020</small></p>
-                                                                    </div>
+                                                                    +2348104407318
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td><b>STATUS:</b></td>
-
+                                                               <td><b>CITY</b></td>
+                                                               <td>
+                                                                Uyo
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><b>LANDMARK</b></td>
                                                                 <td>
-                                                                    <span class="iconify text-danger"
-                                                                        data-icon="emojione-monotone:small-orange-diamond"></span>
-                                                                    <p class="customer d-inline text-danger">Processing
-                                                                    </p>
+                                                                    Durap Lounge
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><b>LGA</b></td>
+                                                                <td>
+                                                                    <p class="customer d-inline text-danger">Oron</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><b>MEMBERSHIP</b></td>
+                                                                <td>
+                                                                    Organizer
                                                                 </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
+                                                    <div class="row gx-2 p-0 w-50 justify-content-center ms-5">
+                                                        <div class="col-6">
+                                                         <img src="./images/virGold HUB.jpeg" alt=""  width="100%" height="100%">
+                                                        </div>
+                                                        <div class="col-6">
+                                                         <img src="./images/virGold HUB.jpeg" alt=""  width="100%" height="100%">
+                                                        </div>
+                                                        <div class="col-6 mt-2 ">
+                                                         <img src="./images/virGold HUB.jpeg" alt=""  width="100%" height="100%">
+                                                        </div>
+                                                     </div>
                                                 </div>
 
                                                 <div class="modal-footer borderless">
@@ -370,7 +424,7 @@
                                         </div>
                                     </div>
                                 </td>
-
+                                <!-- THIRD TABLE ROW -->
                             </tr>
                             <tr>
                                 <td>
@@ -381,38 +435,39 @@
 
                                 <td>
                                     <div>
-                                        <p><small>Birthday</small></p>
+                                        <p><small>kceemaani@gmail.com</small></p>
                                     </div>
                                 </td>
 
                                 <td>
                                     <div>
-                                        <p><small>Chuks Virgo</small></p>
+                                        <p><small>No. 18 Abak road</small></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p><small>+2348104407318</small></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p><small>Uyo</small></p>
                                     </div>
                                 </td>
 
                                 <td>
                                     <div>
-                                        <p><small>N60,000</small></p>
-                                    </div>
-                                </td>
-
-                                <td>
-                                    <div>
-                                        <p><small>21 Dec 2014</small></p>
+                                        <p><small>Durap Lounge</small></p>
                                     </div>
                                 </td>
 
 
                                 <td>
-                                    <span class="iconify text-primary"
-                                        data-icon="emojione-monotone:small-orange-diamond"
-                                        style="color: #027a48;"></span>
-                                    <p class="customer d-inline text-primary">Deleted</p>
+                                    <p class="customer d-inline text-primary">Ikot-ibio</p>
                                 </td>
 
                                 <td>
-                                    <p><small>20 mins ago</small></p>
+                                    <p><small>Administrator</small></p>
                                 </td>
 
                                 <td>
@@ -426,56 +481,76 @@
                                     <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static"
                                         data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
                                         aria-hidden="true">
-                                        <div class="modal-dialog">
+                                        <div class="modal-dialog modal-dialog-centered modal-lg">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="staticBackdropLabel">LATEST GLEE EVENT
+                                                    <h5 class="modal-title" id="staticBackdropLabel">LATEST CHURCHUB
+                                                        EVENT
                                                     </h5>
                                                     <button type="button" class="btn-close btn" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                 </div>
 
-                                                <div class="modal-body">
+                                                <div class="modal-body d-flex">
                                                     <table>
                                                         <thead>
                                                         </thead>
                                                         <tbody class="table">
                                                             <tr>
-                                                                <td><b>CLIENT:</b></td>
+                                                                <td><b>NAME</b></td>
                                                                 <td>David Samuel</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><b>EVENT:</b></td>
-                                                                <td>Birthday</td>
+                                                                <td><b>EMAIL</b></td>
+                                                                <td>kceemaani@gmail.com</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><b>CREATOR:</b></td>
-                                                                <td>Chuks Virgo</td>
+                                                                <td><b>ADDRESS</b></td>
+                                                                <td>No. 18 Abak road</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><b>AMOUNT:</b></td>
-                                                                <td>N60,000</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><b>DELIVERY:</b></td>
+                                                                <td><b>PhoneNumber</b></td>
                                                                 <td>
-                                                                    <div>
-                                                                        <p><small>21 Dec 2014</small></p>
-                                                                    </div>
+                                                                    +2348104407318
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td><b>STATUS:</b></td>
+                                                               <td><b>CITY</b></td>
+                                                               <td>
+                                                                Uyo
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><b>LANDMARK</b></td>
                                                                 <td>
-                                                                    <span class="iconify text-primary"
-                                                                        data-icon="emojione-monotone:small-orange-diamond"
-                                                                        style="color: #027a48;"></span>
-                                                                    <p class="customer d-inline text-primary">Deleted
-                                                                    </p>
+                                                                    Durap Lounge
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><b>LGA</b></td>
+                                                                <td>
+                                                                    <p class="customer d-inline text-danger">Ikot-ibio</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><b>MEMBERSHIP</b></td>
+                                                                <td>
+                                                                    Administrator
                                                                 </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
+                                                    <div class="row gx-2 p-0 w-50 justify-content-center ms-5">
+                                                        <div class="col-6">
+                                                         <img src="./images/virGold HUB.jpeg" alt=""  width="100%" height="100%">
+                                                        </div>
+                                                        <div class="col-6">
+                                                         <img src="./images/virGold HUB.jpeg" alt=""  width="100%" height="100%">
+                                                        </div>
+                                                        <div class="col-6 mt-2 ">
+                                                         <img src="./images/virGold HUB.jpeg" alt=""  width="100%" height="100%">
+                                                        </div>
+                                                     </div>
                                                 </div>
 
                                                 <div class="modal-footer borderless">
@@ -486,7 +561,7 @@
                                         </div>
                                     </div>
                                 </td>
-
+                                <!-- FOURTH TABLE ROW -->
                             </tr>
                             <tr class="align-items-center">
                                 <td>
@@ -497,36 +572,38 @@
 
                                 <td>
                                     <div>
-                                        <p><small>Birthday</small></p>
+                                        <p><small>kceemaani@gmail.com</small></p>
                                     </div>
                                 </td>
 
                                 <td>
                                     <div>
-                                        <p><small>Chuks Virgo</small></p>
-                                    </div>
-                                </td>
-
-                                <td>
-                                    <div>
-                                        <p><small>N60,000</small></p>
+                                        <p><small>No. 18 Abak road</small></p>
                                     </div>
                                 </td>
                                 <td>
                                     <div>
-                                        <p><small>12 Aug 2021</small></p>
+                                        <p><small>+2348104407318</small></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p><small>Uyo</small></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p><small>Durap Lounge</small></p>
                                     </div>
                                 </td>
 
 
                                 <td>
-                                    <span class="iconify text-danger" data-icon="emojione-monotone:small-orange-diamond"
-                                        style="color: #027a48;"></span>
-                                    <p class="customer d-inline text-danger">in Progress</p>
+                                    <p class="customer d-inline text-danger">Itam</p>
                                 </td>
 
                                 <td>
-                                    <p><small>20 mins ago</small></p>
+                                    <p><small>Creator</small></p>
                                 </td>
 
                                 <td>
@@ -540,56 +617,76 @@
                                     <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static"
                                         data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
                                         aria-hidden="true">
-                                        <div class="modal-dialog">
+                                        <div class="modal-dialog modal-dialog-centered modal-lg">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="staticBackdropLabel">LATEST GLEE EVENT
+                                                    <h5 class="modal-title" id="staticBackdropLabel">LATEST CHURCHUB
+                                                        EVENT
                                                     </h5>
                                                     <button type="button" class="btn-close btn" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                 </div>
 
-                                                <div class="modal-body">
+                                                <div class="modal-body d-flex">
                                                     <table>
                                                         <thead>
                                                         </thead>
                                                         <tbody class="table">
                                                             <tr>
-                                                                <td><b>CLIENT:</b></td>
-                                                                <td>David king</td>
+                                                                <td><b>NAME</b></td>
+                                                                <td>David Samuel</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><b>EVENT:</b></td>
-                                                                <td>Birthday</td>
+                                                                <td><b>EMAIL</b></td>
+                                                                <td>kceemaani@gmail.com</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><b>CREATOR:</b></td>
-                                                                <td>Chuks Virgo</td>
+                                                                <td><b>ADDRESS</b></td>
+                                                                <td>No. 18 Abak road</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><b>AMOUNT:</b></td>
-                                                                <td>N60,000</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><b>DELIVERY:</b></td>
+                                                                <td><b>PhoneNumber</b></td>
                                                                 <td>
-                                                                    <div>
-                                                                        <p><small>12 Aug 2021</small></p>
-                                                                    </div>
+                                                                    +2348104407318
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td><b>STATUS:</b></td>
+                                                               <td><b>CITY</b></td>
+                                                               <td>
+                                                                Uyo
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><b>LANDMARK</b></td>
                                                                 <td>
-                                                                    <span class="iconify text-danger"
-                                                                        data-icon="emojione-monotone:small-orange-diamond"
-                                                                        style="color: #027a48;"></span>
-                                                                    <p class="customer d-inline text-danger">in Progress
-                                                                    </p>
+                                                                    Durap Lounge
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><b>LGA</b></td>
+                                                                <td>
+                                                                    <p class="customer d-inline text-danger">Itam</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><b>MEMBERSHIP</b></td>
+                                                                <td>
+                                                                    Creator
                                                                 </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
+                                                    <div class="row gx-2 p-0 w-50 justify-content-center ms-5">
+                                                        <div class="col-6">
+                                                         <img src="./images/virGold HUB.jpeg" alt=""  width="100%" height="100%">
+                                                        </div>
+                                                        <div class="col-6">
+                                                         <img src="./images/virGold HUB.jpeg" alt=""  width="100%" height="100%">
+                                                        </div>
+                                                        <div class="col-6 mt-2 ">
+                                                         <img src="./images/virGold HUB.jpeg" alt=""  width="100%" height="100%">
+                                                        </div>
+                                                     </div>
                                                 </div>
 
                                                 <div class="modal-footer borderless">
@@ -600,7 +697,7 @@
                                         </div>
                                     </div>
                                 </td>
-
+                                <!-- FIFTH TABLE ROW -->
                             </tr>
                             <tr class="align-items-center">
                                 <td>
@@ -611,38 +708,40 @@
 
                                 <td>
                                     <div>
-                                        <p><small>Birthday</small></p>
+                                        <p><small>kceemaani@gmail.com</small></p>
                                     </div>
                                 </td>
 
 
                                 <td>
                                     <div>
-                                        <p><small>Chuks Virgo</small></p>
+                                        <p><small>No. 18 Abak road</small></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p><small>+2348104407318</small></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p><small>Uyo</small></p>
                                     </div>
                                 </td>
 
                                 <td>
                                     <div>
-                                        <p><small>N60,000</small></p>
-                                    </div>
-                                </td>
-
-                                <td>
-                                    <div>
-                                        <p><small>21 Dec 2024</small></p>
+                                        <p><small>Durap Lounge</small></p>
                                     </div>
                                 </td>
 
 
                                 <td>
-                                    <span class="iconify text-danger"
-                                        data-icon="emojione-monotone:small-orange-diamond"></span>
-                                    <p class="customer d-inline text-danger">Deleted</p>
+                                    <p class="customer d-inline text-danger">Uyo</p>
                                 </td>
 
                                 <td>
-                                    <p><small>20 mins ago</small></p>
+                                    <p><small>Administrator</small></p>
                                 </td>
 
                                 <td>
@@ -656,54 +755,76 @@
                                     <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static"
                                         data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
                                         aria-hidden="true">
-                                        <div class="modal-dialog">
+                                        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog modal-dialog-centered modal-lg-centered modal-lg">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="staticBackdropLabel">LATEST GLEE EVENT
+                                                    <h5 class="modal-title" id="staticBackdropLabel">LATEST CHURCHUB
+                                                        EVENT
                                                     </h5>
                                                     <button type="button" class="btn-close btn" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                 </div>
 
-                                                <div class="modal-body">
+                                                <div class="modal-body d-flex">
                                                     <table>
                                                         <thead>
                                                         </thead>
                                                         <tbody class="table">
                                                             <tr>
-                                                                <td><b>CLIENT:</b></td>
+                                                                <td><b>NAME</b></td>
                                                                 <td>David Samuel</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><b>EVENT:</b></td>
-                                                                <td>Birthday</td>
+                                                                <td><b>EMAIL</b></td>
+                                                                <td>kceemaani@gmail.com</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><b>CREATOR:</b></td>
-                                                                <td>Chuks Virgo</td>
+                                                                <td><b>ADDRESS</b></td>
+                                                                <td>No. 18 Abak road</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><b>AMOUNT:</b></td>
-                                                                <td>N60,000</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><b>DELIVERY:</b></td>
+                                                                <td><b>PhoneNumber</b></td>
                                                                 <td>
-                                                                    <div>
-                                                                        <p><small>21 Dec 2014</small></p>
-                                                                    </div>
+                                                                    +2348104407318
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td><b>STATUS:</b></td>
+                                                               <td><b>CITY</b></td>
+                                                               <td>
+                                                                Uyo
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><b>LANDMARK</b></td>
                                                                 <td>
-                                                                    <span class="iconify text-danger"
-                                                                        data-icon="emojione-monotone:small-orange-diamond"></span>
-                                                                    <p class="customer d-inline text-danger">Deleted</p>
+                                                                    Durap Lounge
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><b>LGA</b></td>
+                                                                <td>
+                                                                    <p class="customer d-inline text-danger">Uyo</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><b>MEMBERSHIP</b></td>
+                                                                <td>
+                                                                    Administrator
                                                                 </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
+                                                    <div class="row gx-2 p-0 w-50 justify-content-center ms-5">
+                                                       <div class="col-6">
+                                                        <img src="./images/virGold HUB.jpeg" alt=""  width="100%" height="100%">
+                                                       </div>
+                                                       <div class="col-6">
+                                                        <img src="./images/virGold HUB.jpeg" alt=""  width="100%" height="100%">
+                                                       </div>
+                                                       <div class="col-6 mt-2 ">
+                                                        <img src="./images/virGold HUB.jpeg" alt=""  width="100%" height="100%">
+                                                       </div>
+                                                    </div>
                                                 </div>
 
                                                 <div class="modal-footer borderless">
@@ -722,7 +843,7 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="./Daahboard.js"></script>
+    <script src="./dashboard.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>

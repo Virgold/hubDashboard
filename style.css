@@ -1,3 +1,6 @@
+body{
+  font-family: 'Josefin Sans', sans-serif;
+}
 .navbar {
     outline: 1px solid whitesmoke !important;
 }
@@ -10,11 +13,15 @@ th {
     background-color: white!important;
     /* border-style: none!important; */
     border-width: 1px 0px;
+    border-collapse: unset;
+   
 }
-.modal-body>table,.modal-body>.thead,.modal-body>tr,.modal-body>th{
+
+.modal-body > table > thead > tr > th{
   border: none!important;
   border-bottom-color: none !important;
   border-width: none!important;
+  background-color: #9FC131!important;
 }
 .progress {
   width: 60px;
@@ -88,8 +95,10 @@ th {
 }
 
 .btn{
-    padding: 0px 10px !important;
+    padding: 5px 10px !important;
     border-color: #9FC131!important;
+    background-color: #9FC131!important;
+    color: white!important;
 }
 .btn:focus{
     box-shadow: none!important;
@@ -112,4 +121,12 @@ th {
     Width: 66px;
     Height: 22px;
     Padding: 2px, 8px, 2px, 8px;
+}
+.modal-content{
+  background-color: transparent;
+}
+
+@media (max-width: 991px) {
+
+  
 }
